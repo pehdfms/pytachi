@@ -23,7 +23,7 @@ def separate_chapters(title, chapters, offset):
 
     last = 0
     for idx, chapter in enumerate(chapters):
-        new_dir = f"ch{idx+offset+1}"
+        new_dir = f"{title} - 【第{idx+offset+1}話】"
 
         try:
             os.mkdir(new_dir)
